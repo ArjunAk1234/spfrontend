@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-login-app'`, () => {
+  it(`should have as title 'Spotify clone'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-login-app');
+    expect(app.title).toEqual('Spotify clone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-login-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Spotify clone app is running!');
   });
 });
